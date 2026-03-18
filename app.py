@@ -260,7 +260,7 @@ def train_model() -> VotingClassifier:
 
 def main() -> None:
     st.set_page_config(page_title="AI vs Human Voice Detector", layout="wide", menu_items={"Get Help": None, "Report a Bug": None, "About": None,})
-    hide_streamlit_style = """<style>/* 우측 상단 Fork / GitHub / Deploy 영역 숨기기 */[data-testid="stToolbar"]{display: none;}/* 상단 기본 헤더 숨기기 */[data-testid="stHeader"]{display: none;}footer {visibility: hidden;}</style>"""
+    hide_streamlit_style = """<style>/* 우측 상단 툴바 숨기기 (Fork, GitHub 등 포함 영역) */[data-testid="stToolbar"]{display: none !important;}/* 상단 기본 헤더 숨기기 */[data-testid="stHeader"]{display: none !important;}/* 오른쪽 아래 떠 있는 Stramlit 장식/배지 숨기기 */[data-testid="stDecoration"]{display: none !important;}/* footer 숨기기 */footer {visibility: hidden !important;}/* 제목 옆에 자동으로 붙는 링크 아이콘 숨기기 */a[href^="#"]{display: none !important;}</style>"""
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     # Custom CSS for a clean, portfolio-like interface.
     st.markdown(
