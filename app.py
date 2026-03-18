@@ -259,7 +259,7 @@ def train_model() -> VotingClassifier:
 
 
 def main() -> None:
-    st.set_page_config(page_title="AI vs Human Voice Detector", layout="wide")
+    st.set_page_config(page_title="AI vs Human Voice Detector", layout="wide", menu_items={"Get Help": None, "Report a Bug": None, "About": None,})
 
     # Custom CSS for a clean, portfolio-like interface.
     st.markdown(
